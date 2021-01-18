@@ -13,9 +13,9 @@ class Node:
         link to the previous node in cache
     """
 
-    def __init__(self, val=None, key=None):
-        self.val = val
+    def __init__(self, key=None, val=None):
         self.key = key
+        self.val = val
 
         self.next = None
         self.prev = None

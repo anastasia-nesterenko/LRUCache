@@ -51,7 +51,7 @@ class LRUCache(dict):
             node.val = value
             self._move_to_head(node)
         else:
-            node = Node(value, key)
+            node = Node(key, value)
             self[key] = node
 
             self._add_to_head(node)
